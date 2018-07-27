@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Lora|Yellowtail');
+
+* {
+	--primary-color: #10C6C9;
+	--accent-color: #FFAB35;
+}
+
+body {
+	box-sizing: border-box;
+	background-color: #333;
+	color: #031526;
+	margin: 0px 0px;
+	padding: 0px 0px;
+	font-family: Lato, sans-serif; 
+	font-size: 16px;
+	height: 100%;
+}
+
+  
+
+section {
+	border-bottom: 2px solid black;
+
+}
+
+h1 {
+	font-size: 11vw;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-family: Yellowtail, cursive;
+	color: #333;
+}
+
+h2 {
+	margin: 0 0 4vmax 0;
+	font-size: 5vmin;
+	font-family: Lato, cursive;
+}
+
+h3 {
+	font-size: 3vmax;
+	font-family: Lora;
+	color: black;
+}
+
+h4 {
+	font-size: 3.5vmin;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-family: Lora;
+}
+
+/* -------------------- HEADER -------------------- */
+.page-head {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 10vh;
+	width: 100%;
+	background-color: var(--accent-color);
+	display: flex;
+	justify-content: flex-end;
+	border-bottom: 1px solid #031526;
+	z-index: 10;
+	background-image: url(https://res.cloudinary.com/thedtj/image/upload/co_rgb:ffab35,e_colorize:67/v1531520184/FCC/Portfolio/new_year_background.png);
+	background-repeat: repeat;
+	transition: all .1s ease-in-out;
+}
+
+nav {
+	width: 50vw;
+	justify-self: flex-end;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	width: 70%;
+}
+
+ul {
+	list-style-type: none;
+	
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	padding: 0;
+
+}
+
+.nav-link {
+	text-decoration: none;
+	color: #031526;
+}
+.nav-item {
+	font-size: 2.5vh;
+	padding: auto;
+	padding: 1vh 1.5vw;
+	align-self: center;
+	text-transform: capitalize;
+	font-family: Lato, Serif;
+}
+
+.nav-item:hover {
+	font-weight: 700;
+}
+
+/* -------------------- WELCOME -------------------- */
+
+.welcome {
+	height: 100vh;
+	background-color: var(--primary-color);
+	z-index: 5;
+	background-image: url("https://res.cloudinary.com/thedtj/image/upload/co_rgb:10c6c9,e_colorize:50/v1531519223/FCC/Portfolio/funky-lines.png");
+	background-repeat: repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10vh 0 0 0;
+	margin: -10vh 0 5vh 0;
+}
+
+.business-card {
+	width:80vw;
+	height: 45vw;
+	background-image: url("https://res.cloudinary.com/thedtj/image/upload/v1531464813/FCC/Portfolio/creampaper.png");
+	background-repeat: repeat;
+	box-shadow: 0px 0px 30px black;
+	display: grid;
+	grid-template-columns: 28vw auto;
+	grid-template-rows: 45% 20% 35%;
+	grid-template-areas:
+		"image header"
+		"image tag"
+		"image profiles";
+align-content: center;
+	transition: all .3s;
+	color: #333;
+}
+
+.business-card:hover {
+	box-shadow: 0 5px 50px 10px;
+	transform: translateY(-1vh);
+}
+
+.profile-pic {
+	grid-area: image;
+	width: 100%;
+	height: auto;
+	align-self: center;
+	margin: auto .5vw;
+	padding: 1%;
+	border-radius: 3% 20%;
+	border-style: outset;
+	border-color: var(--primary-color);
+}
+
+.profile-header {
+	grid-area: header;
+	justify-self: center;
+	align-self: end;
+}
+
+.tag {
+	color: #222;
+	align-self: start;
+	overflow: hidden;
+	height: 25vw;
+	width:45vw;
+	grid-area: tag;
+	justify-self: center;
+	text-align: center;
+	margin: 2vh auto 0 auto;
+}
+
+.profile-footer {
+	grid-area: profiles;
+	justify-self: bottom;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 80%;
+	justify-content: space-evenly;
+}
+
+.profile-logo {
+	height: 3vmin;
+}
+
+/* -------------------- PROJECTS --------------------*/
+
+.projects {
+	background-color: #1F2041;
+	z-index: 4;
+	color: #F2F0E6;
+	width: 100%;
+	background-image: url("https://res.cloudinary.com/thedtj/image/upload/co_rgb:1f2041,e_colorize:30/v1531546604/FCC/Portfolio/dark_geometric.png");
+	padding: 0;
+	overflow: auto;
+	padding-top: 10vh;
+	margin-top: -10vh;
+	padding-bottom: 10vh;
+	border-top: 2px solid #1F2041;
+}
+
+.projects-header {
+	margin: 2vh auto 0 5vw;
+}
+
+.projects-card-deck {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: inherit;
+	margin-bottom: 5vh;
+}
+
+.projects-card-deck a {
+	text-decoration: none;
+}
+
+.projects-card-deck a:active,
+.projects-card-deck a:visited {
+	color: #222;
+}
+
+ .project-tile {
+	background-color: #F2F0E6;
+	color: #222;
+	width: 70vw;
+	height: 60vh;
+	border: 2px solid #000;
+	border-radius: 2%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 0 0 20px #222;
+	background-image: url("https://res.cloudinary.com/thedtj/image/upload/v1531464813/FCC/Portfolio/creampaper.png");
+	box-shadow: 0 0 15px #0C999B;
+	margin: 5% auto;
+	transition: all .15s ease-in-out;
+	text-align: center;
+}
+
+.project-tile:hover {
+	transform: scale(1.01) translateY(-1vh);
+	box-shadow: 0 0 50px #0C999B;
+}
+
+.card-image {
+	height: 70%;
+	background-image: url("https://res.cloudinary.com/thedtj/image/upload/v1526017831/FCC/Product/mcd-AstronautTraining.jpg");
+	background-size: cover;
+	border-radius: 5%;
+	margin: .5vmin;
+	width: 95%;
+	border: 1px solid #222;
+}
+
+#card-image1 {
+	background-image: url("https://res.cloudinary.com/thedtj/image/upload/v1531787420/FCC/Portfolio/bandpage.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+#card-image2 {
+	background-image: url("https://res.cloudinary.com/thedtj/image/upload/v1531787420/FCC/Portfolio/tobolowsky.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+#card-image3 {
+	background-image: url("https://res.cloudinary.com/thedtj/image/upload/v1531787420/FCC/Portfolio/documentation.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.card-content {
+	padding: 0 1vw;
+}
+
+.tech-container {
+	width: 70%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.fab {
+	font-size: 3rem;
+}
+
+.fa-html5 {
+	color: #E34C26;
+}
+
+.fa-css3-alt {
+	color: #346DB3;
+}
+
+/* -------------------- VIDEO --------------------*/
+
+.video {
+	background-image: url("https://res.cloudinary.com/thedtj/image/upload/co_rgb:10C6C9,e_colorize:50/v1531531372/FCC/Portfolio/qbkls.png");
+	background-repeat: repeat;
+	background-color:aliceblue;
+	z-index: 3;
+	height: 100vh;
+	margin-top: -10vh;
+	padding-top: 10vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items:center;
+	margin-bottom: 5vh;
+}
+
+.video-header {
+	margin: 2vh auto 0 5vw;
+}
+
+.reel-container {
+	height: 45vw;
+	width: 80vw;
+	max-width: 800px;
+	max-height: 450px;
+	overflow: hidden;
+	margin: 5vh auto;
+}
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 75%;
+	margin: auto;
+	height: 100%;
+	width: 100%;
+}
+
+.video-info {
+	width: 60vw;
+	height: 30vw;
+	margin: 0 auto auto auto;
+}
+
+/* -------------------- CONTACT -------------------- */
+
+.contact {
+	background-image: url("https://res.cloudinary.com/thedtj/image/upload/co_rgb:1f2041,e_colorize:50/v1531546604/FCC/Portfolio/connectwork.png");
+	z-index: 2;
+	color: #F2F0E6;
+	padding-top: 10vh;
+	margin-top: -10vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-header {
+	margin: 2vh auto 0 5vw;
+}
+
+.survey {
+	max-width: 1200px;
+	margin: auto;
+	margin: 2vh 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+.form-align {
+	display: flex;
+	flex-direction: column;
+	width: 80vw;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.form-child {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 45%;
+	width: 100%;
+	margin-top: 1vh
+}
+
+label {
+	margin: 1vh 0;
+}
+
+.phone-use {
+	padding: .5vh;
+	width: 20vw;
+	display: flex;
+	justify-content: space-between;
+}
+
+input[type=text], input[type=email], input[type=number] {
+	width: 95%;
+	padding: .6em;
+	border-radius: 5px;
+	border-color: #222244;
+	border-style: solid;
+	border-width: 2px;
+}
+
+input.full-name, input[type=email] {
+	border-color: #8C1C38;
+}
+
+.project-type select{
+	width: 98.5%;
+	padding: .6em;
+	border-radius: 5px;
+	border-color: #222244;
+	border-style: solid;
+	border-width: 2px;
+}
+
+textarea {
+	width: 96%;
+	height: 300px;
+	resize: none;
+	border-radius: 3px;
+	padding: 5px;
+	max-width: 700px;
+	border-color: #222244;
+	border: 0;
+}
+textarea:focus, input:focus, select:focus {
+	background-color: #E9F9FA;
+	border-color: rgba(56, 185, 210, 0.8);
+}
+
+.send-btn {
+	width: 78vw;
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	width: 100%;
+	display: block;
+	background-color: var(--accent-color);
+	border: 1px 1px 1px solid;
+	border-radius: 11px;
+	border-style: groove;
+	border-color: #222;
+	padding: 14px;
+	cursor: pointer;
+	color: #222;
+	text-align: center;
+	font-family: Open Sans;
+	font-size: 16px;
+	margin: 20px 0 20px 0;
+	transition: all .15s ease-in-out;
+	font-weight: 700;
+	background-image: url(https://res.cloudinary.com/thedtj/image/upload/co_rgb:ffab35,e_colorize:67/v1531520184/FCC/Portfolio/new_year_background.png);
+}
+
+button:hover{
+	background-color: #FFC16C;
+}
+
+/* -------------------- MEDIA CALLS -------------------- */
+
+@media (min-width: 901px) {
+	
+	body {
+		font-size: 2vmin;
+	}
+	
+	h3 {
+		font-size: 3vmin;
+	}
+	
+	.projects, .video {
+		margin-bottom: 0;
+	}
+	/* --------------- HEADER ---------------*/
+	
+	.page-head {
+		height: 5vh;
+	}
+	/* ---------------- WELCOME --------------- */
+		
+	.welcome {
+		padding-top: 5vh;
+		margin-top: -5vh;
+		margin-bottom: 5vh;
+	}
+	.profile-logo {
+		height: 3vmax;
+	}
+		
+	/* --------------- PROJECTS --------------- */
+	
+	.projects {
+		padding-bottom: 10vh;
+		border-top: 2px solid #1F2041;
+		padding-top: 5vh;
+		margin-top: -5vh;
+	}
+	
+	.projects-card-deck {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+
+	.project-tile {
+		height: 35vh;
+		width: 30vh;
+		padding-bottom: 1vh;
+		margin: 5vh 3vw;
+		
+	}
+
+	.project-tile:hover {
+		transform: scale(1.01) translateY(-1vh);
+		box-shadow: 0 0 50px #0C999B;
+	}
+	
+	/* --------------- VIDEO --------------- */
+
+	.video {
+		padding-top: 5vh;
+		margin-top: -5vh;
+		height: 100vh;
+	}
+
+	
+	/* --------------- CONTACT ---------------- */
+		
+		.contct {
+			padding-top: 5vh;
+			margin-top: -5vh;
+		}
+	
+	.form-align {
+		display: grid;
+		grid-template-columns: 1fr 1.3fr;
+		grid-template-areas:
+			"form1 form2";
+	}
+		
+	.left {
+		grid-area: form1;
+		height: 45vh;
+	}
+	.right {
+		grid-area: form2;
+		height: 45vh;
+	}
+
+	.form-child{
+		justify-content: flex-start;
+	}
+		
+	input[type=text], input[type=email], input[type=number] {
+		width: 80%;
+		padding: 1vh;
+	}
+	
+	.phone-use {
+		margin-bottom: 4vh;
+	}
+	.project-type {
+		width: 86%;
+	}
+	
+	textarea {
+		height: 78%;
+	}
+	
+	.snd-btn {
+		width: 20vw;
+	}
+	
+	button{
+		width: 79.5vw;
+		max-width: 1200px;
+	}
+}
+
+
