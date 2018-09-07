@@ -110,19 +110,24 @@ ul {
 	font-weight: 700;
 }
 
-/* -------------------- WELCOME -------------------- */
+/* -------------------- MAIN -------------------- */
+.main {
+	background-image: url("https://res.cloudinary.com/thedtj/image/upload/co_rgb:10c6c9,e_colorize:50/v1531519223/FCC/Portfolio/funky-lines.png");
+	background-repeat: repeat;
+}
+	/* -------------------- WELCOME -------------------- */
 
 .welcome {
 	height: 100vh;
 	background-color: var(--primary-color);
-	z-index: 5;
 	background-image: url("https://res.cloudinary.com/thedtj/image/upload/co_rgb:10c6c9,e_colorize:50/v1531519223/FCC/Portfolio/funky-lines.png");
 	background-repeat: repeat;
+	z-index: 5;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 10vh 0 0 0;
-	margin: -10vh 0 5vh 0;
+	margin: -10vh 0 10vh 0;
 }
 
 .business-card {
